@@ -9,7 +9,7 @@ try {
 
   (function Demo() {
     // Use let (or const) instead of var to make the function succeed.
-    const myDemo = "This is a dem";
+    const myDemo = "This is a demo";
 
     // Don't make changes below this line
 
@@ -20,29 +20,29 @@ try {
 
   /// let (or const) ///
 
-  // (function UseLetOrConst() {
-  //   // Use let (or const) instead of var to make the function succeed.
-  //   var x = 1;
-  //   if (true) {
-  //     var x = 2;
-  //   }
+  (function UseLetOrConst() {
+    // Use let (or const) instead of var to make the function succeed.
+    const x = 1;
+    if (true) {
+      let x = 2;
+    }
 
-  //   // Don't make changes below this line
+    // Don't make changes below this line
 
-  //   expect(x).toBe(1);
+    expect(x).toBe(1);
 
-  //   solved++;
-  // })();
+    solved++;
+  })();
 
   /// Template strings ///
 
-  /*
+
 	(function UseTemplateStrings1() {
-		const who = 'World';
+		const who = "World";
 		const addOne = x => x + 1;
 		
 		// Rewrite the line below to use template literals.
-		const greeting = 'Hello {who}! {addOne(2)} times.';
+		const greeting = `Hello ${who}! ${addOne(2)} times.`;
 
 		// Don't make changes below this line	
 		
@@ -50,7 +50,7 @@ try {
 		
 		solved++;
 	})();
-  */
+
 
   /// functions default parameters ///
 

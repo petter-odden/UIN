@@ -414,7 +414,7 @@ try {
 				result += x;
 				return result;
 		}
-		
+
 		// Don't make changes below this line	
 		
 		expect(one()).toBe(1);
@@ -428,7 +428,7 @@ try {
 
   /// Destructuring (bonus) ///
 
-  /*
+  
 	(function UseObjectDestructuring2() {
 		let obj = {
 			name: 'Oslo',
@@ -437,9 +437,16 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		let a = obj.name;
-		let b = obj.age;
-		let c = obj.add;
+		//let a = obj.name;
+		//let b = obj.age;
+		//let c = obj.add;
+
+		let {
+			name: a, 
+			age: b,
+			add: c
+		 } = obj;
+
 
 		// Don't make changes below this line	
 		
@@ -449,7 +456,7 @@ try {
 		
 		solvedBonus++;
 	})();
-	*/
+	
 
   /*
 	(function UseFailSoftDestructuring() {

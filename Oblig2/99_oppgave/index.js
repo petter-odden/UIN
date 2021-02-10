@@ -402,19 +402,19 @@ try {
 
   /// Arrow functions (bonus) ///
 
-  /*
+  
 	(function UseArrow3() {
 		// Rewrite all functions as arrow functions. Use as minimal syntax as possible.
-		let one = function () { return 1; };
-		let two = function (x) { return x + x; };
-		let three = function (x, y) { return x + y; };
-		let four = function (x, y) {
+		const one = () => 1;
+		const two = (x) => x + x;
+		const three = (x, y) => x + y;
+		const four = (x,y) => {
 			let result = 0;
-			for (let i = x; i < y; i++)
-				result += i;
-			return result;
-			};
-
+			for (;x < y;x++)
+				result += x;
+				return result;
+		}
+		
 		// Don't make changes below this line	
 		
 		expect(one()).toBe(1);
@@ -424,7 +424,7 @@ try {
 		
 		solvedBonus++;
 	})();
-	*/
+	
 
   /// Destructuring (bonus) ///
 

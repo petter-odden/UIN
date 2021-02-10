@@ -269,26 +269,29 @@ try {
 
   /// Property shorthand ///
 
-  /*
 	(function UsePropertyShorthand() {
 		const name = 'Oslo';
 		const age = 985;
 		const norwegian = true;
 		
 		// Remove all unnecesary syntax to let the test pass.
-		let city = {
+		/*let city = {
 			name: name,
 			age: age,
-			dutch: !norwegian
+			dutch: false
 		};
-
+		*/
+		let city = {
+			name,
+			age,
+			dutch: false
+		}
 		// Don't make changes below this line	
 		
 		expect(city).toEqual({name: 'Oslo', age: 985, dutch: false});
 		
 		solved++;
 	})();
-	*/
 
   /// Object Spread Properties (ES2018) ///
 

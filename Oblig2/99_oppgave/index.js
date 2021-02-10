@@ -295,12 +295,12 @@ try {
 
   /// Object Spread Properties (ES2018) ///
 
-  /*
+
 	(function UseObjectSpreadProperties1() {
 		let obj = { val: 1 };
 		
 		// Use Object Spread Properties to let the tests succeed.
-		let copy = obj;
+		let copy = {...obj};
 
 		// Don't make changes below this line	
 		
@@ -311,9 +311,9 @@ try {
 
 		solved++;
 	})();
-	*/
+	
 
-  /*
+  
 	(function UseObjectSpreadProperties2() {
 		let obj1 = { a: 100, b: 2, c: 300 };
 		let obj2 = { b: 0, d: 100, e: 200};
@@ -323,7 +323,7 @@ try {
 		// - Do NOT use Object.assign()
 		// - Do use object spread properties
 		// - Think about the order!
-		let result = { obj1, obj2, obj3 };
+		let result = { ...obj1, ...obj2, ...obj3, ...obj2};
 
 		// Don't make changes below this line	
 		
@@ -335,7 +335,7 @@ try {
 
 		solved++;
 	})();
-	*/
+	
 
   ////// BONUS //////
 

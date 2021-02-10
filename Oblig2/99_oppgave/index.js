@@ -160,16 +160,14 @@ try {
 
   /// Destructuring ///
 
-  /*
+  
 	(function UseArrayDestructuring1() {
 		const arr = [1, 2, 3, 4, 5, 6];
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// Tip: Spread operator might be needed too.
-		let a = arr[0];
-		let b = arr[2];
-		let c = arr.slice(3); 
 
+		let [a,b,c] = [arr[0],arr[2],arr.slice(3)];
 		// Don't make changes below this line	
 		
 		expect(a).toEqual(1);
@@ -178,18 +176,17 @@ try {
 		
 		solved++;
 	})();
-	*/
+	
 
-  /*
+  
 	(function UseArrayDestructuring2() {
 		let a = 1;
 		let b = 2;
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// You should not need a temporary variable anymore.
-		let tmp = a;
-		a = b;
-		b = tmp; 
+
+		[a,b] = [b,a];
 
 		// Don't make changes below this line	
 		
@@ -198,9 +195,9 @@ try {
 		
 		solved++;
 	})();
-	*/
+	
 
-  /*
+  
 	(function UseObjectDestructuring1() {
 		let obj = {
 			name: 'Oslo',
@@ -209,9 +206,12 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		let name = obj.name;
-		let age = obj.age;
-		let add = obj.add;
+		
+		let {
+			name: name, 
+			age: age,
+			add: add
+		 } = obj;
 
 		// Don't make changes below this line	
 		
@@ -221,13 +221,16 @@ try {
 		
 		solved++;
 	})();
-	*/
+	
 
-  /*
+  
   (function UseParameterDestructuring1() {
     // Adjust the code to let the test succeed.
 
-    const a = 'Oslo' + 985;
+	//const a = 'Oslo' + 985;
+
+	const a = ["Oslo", 985];
+	const [name, age] = a;
 
     // Don't make changes below this line
 
@@ -240,13 +243,17 @@ try {
 
     solved++;
   })();
-	*/
+	
 
-  /*
   (function UseParameterDestructuring2() {
     // Adjust the code to let the test succeed.
 
-    const a = 'Oslo' + 985;
+    //const a = 'Oslo' + 985;
+
+	const a = {
+		name: "Oslo",
+		age: 985
+	}
 
     // Don't make changes below this line
 
@@ -259,7 +266,6 @@ try {
 
     solved++;
   })();
-	*/
 
   /// Property shorthand ///
 

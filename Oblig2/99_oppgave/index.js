@@ -230,7 +230,7 @@ try {
 	//const a = 'Oslo' + 985;
 
 	const a = ["Oslo", 985];
-	const [name, age] = a;
+	//const [name, age] = a;
 
     // Don't make changes below this line
 

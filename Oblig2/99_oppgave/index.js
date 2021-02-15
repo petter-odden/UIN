@@ -208,9 +208,9 @@ try {
 		// Use object destructuring to change the 3 statements below into 1 statement.
 		
 		let {
-			name: name, 
-			age: age,
-			add: add
+			name, 
+			age,
+			add
 		 } = obj;
 
 		// Don't make changes below this line	
@@ -323,7 +323,7 @@ try {
 		// - Do NOT use Object.assign()
 		// - Do use object spread properties
 		// - Think about the order!
-		let result = { ...obj1, ...obj2, ...obj3, ...obj2};
+		let result = { ...obj1, ...obj3, ...obj2};
 
 		// Don't make changes below this line	
 		
